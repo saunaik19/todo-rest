@@ -1,4 +1,4 @@
-package com.saurabh.todo.rest.dto;
+package com.saurabh.todo.rest.webservice.dto;
 
 import java.util.Date;
 import java.util.Objects;

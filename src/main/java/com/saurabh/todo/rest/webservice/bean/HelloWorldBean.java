@@ -1,4 +1,4 @@
-package com.saurabh.todo.rest.bean;
+package com.saurabh.todo.rest.webservice.bean;
 
 public class HelloWorldBean {
     private String message;

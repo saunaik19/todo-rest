@@ -1,5 +1,4 @@
-package com.saurabh.todo.rest.config;
-
+package com.saurabh.todo.rest.basic;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -8,16 +7,17 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 
 @Configuration
 @EnableWebSecurity
-public class SpringSecurityConfigurationBasicAuth extends WebSecurityConfigurerAdapter {
-        @Override
-        protected void configure(HttpSecurity http) throws Exception {
+public class SpringSecurityConfigurationBasicAuth extends WebSecurityConfigurerAdapter{
+    
+    @Override
+    protected void configure(HttpSecurity http) throws Exception {
         http
-                .csrf().disable()
-                .authorizeRequests()
-                .antMatchers(HttpMethod.OPTIONS,"/**").permitAll()
+        .csrf().disable()   
+        .authorizeRequests()
+        .antMatchers(HttpMethod.OPTIONS,"/**").permitAll()
                 .anyRequest().authenticated()
                 .and()
-              //  .formLogin().and()
-                .httpBasic();
+            //.formLogin().and()
+            .httpBasic();
     }
 }

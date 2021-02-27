@@ -1,4 +1,4 @@
-package com.saurabh.todo.rest;
+package com.saurabh.todo.rest.webservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

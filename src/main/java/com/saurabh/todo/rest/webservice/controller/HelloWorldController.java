@@ -1,6 +1,6 @@
-package com.saurabh.todo.rest.controller;
+package com.saurabh.todo.rest.webservice.controller;
 
-import com.saurabh.todo.rest.bean.HelloWorldBean;
+import com.saurabh.todo.rest.webservice.bean.HelloWorldBean;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

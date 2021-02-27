@@ -1,12 +1,11 @@
-package com.saurabh.todo.rest.service;
+package com.saurabh.todo.rest.webservice.service;
 
-import com.saurabh.todo.rest.dto.ToDo;
+import com.saurabh.todo.rest.webservice.dto.ToDo;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.Objects;
 
 @Service
 public class ToDoService {

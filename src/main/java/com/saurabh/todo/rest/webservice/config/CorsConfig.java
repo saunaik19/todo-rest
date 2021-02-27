@@ -1,4 +1,4 @@
-package com.saurabh.todo.rest.config;
+package com.saurabh.todo.rest.webservice.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;

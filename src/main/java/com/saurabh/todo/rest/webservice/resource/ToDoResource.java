@@ -1,7 +1,7 @@
-package com.saurabh.todo.rest.resource;
+package com.saurabh.todo.rest.webservice.resource;
 
-import com.saurabh.todo.rest.dto.ToDo;
-import com.saurabh.todo.rest.service.ToDoService;
+import com.saurabh.todo.rest.webservice.dto.ToDo;
+import com.saurabh.todo.rest.webservice.service.ToDoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

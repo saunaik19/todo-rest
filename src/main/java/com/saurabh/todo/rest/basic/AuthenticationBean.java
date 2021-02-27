@@ -1,9 +1,10 @@
-package com.saurabh.todo.rest.bean;
-
+package com.saurabh.todo.rest.basic;
 public class AuthenticationBean {
+
     private String message;
-    public AuthenticationBean(String message){
-        this.message=message;
+
+    public AuthenticationBean(String message) {
+        this.message = message;
     }
 
     public String getMessage() {
@@ -16,8 +17,8 @@ public class AuthenticationBean {
 
     @Override
     public String toString() {
-        return "HelloWorldBean{" +
-                "message='" + message + '\'' +
-                '}';
+        return String.format("HelloWorldBean [message=%s]", message);
     }
+
 }
+

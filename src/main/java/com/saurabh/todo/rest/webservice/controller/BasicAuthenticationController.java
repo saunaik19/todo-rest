@@ -1,6 +1,6 @@
-package com.saurabh.todo.rest.controller;
+package com.saurabh.todo.rest.webservice.controller;
 
-import com.saurabh.todo.rest.bean.AuthenticationBean;
+import com.saurabh.todo.rest.basic.AuthenticationBean;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
