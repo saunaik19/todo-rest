@@ -12,7 +12,7 @@ import java.net.URI;
 import java.util.List;
 import java.util.Objects;
 
-@CrossOrigin(origins ={"http://localhost:4200"})
+@CrossOrigin(origins ={"http://localhost:4200","http://192.168.0.103:4200"})
 @RestController
 public class ToDoResource {
     @Autowired
