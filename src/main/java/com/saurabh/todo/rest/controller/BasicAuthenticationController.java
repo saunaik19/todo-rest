@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin(origins = {"http://localhost:4200","http://192.168.0.103:4200"})
 public class BasicAuthenticationController {
 
-    @GetMapping(path = "/auth/")
+    @GetMapping(path = "/basicAuth")
     public AuthenticationBean authenticate(){
     return new AuthenticationBean("You are authenticated.......");
     }
