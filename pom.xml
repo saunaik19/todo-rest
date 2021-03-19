@@ -60,6 +60,8 @@
 			<artifactId>jjwt-impl</artifactId>
 			<version>0.10.1</version>
 		</dependency>
+
+
 	</dependencies>
 
 	<build>
@@ -68,8 +70,37 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<groupId>org.sonarsource.scanner.maven</groupId>
+				<artifactId>sonar-maven-plugin</artifactId>
+				<version>3.7.0.1746</version>
+			</plugin>
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>0.8.6</version>
+			</plugin>
 		</plugins>
+
 		<finalName>todo-rest-server</finalName>
 	</build>
-
+	<profiles>
+		<profile>
+			<id>sonar</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				<!-- Optional URL to server. Default value is http://localhost:9000 -->
+				<sonar.host.url> http://localhost:9000 </sonar.host.url>
+				<!--Uncomment below few lines if you are using external databases(Oracle/DB2/Mysql) -->
+				<!--  <sonar.jdbc.url>your database url</sonar.jdbc.url>
+               <sonar.jdbc.driver>your DB driver</sonar.jdbc.driver>
+               <sonar.jdbc.username>DB username</sonar.jdbc.username>
+               <sonar.jdbc.password>DB password</sonar.jdbc.password>        -->
+				<sonar.login>admin</sonar.login>
+				<sonar.password>saurabh</sonar.password>
+			</properties>
+		</profile>
+	</profiles>
 </project>
